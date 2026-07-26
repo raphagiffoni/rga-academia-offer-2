@@ -1,7 +1,9 @@
 /**
- * Video player do YouTube.
- * Ao clicar no play button, injeta iframe do YouTube (com autoplay).
- * Se data-yt-id estiver vazio (ainda não subiu o vídeo), mantém placeholder.
+ * Video player.
+ * Suporta dois modos, mutuamente exclusivos:
+ *  - data-yt-id="XXXX"           → embed YouTube iframe (autoplay + rel=0)
+ *  - data-video-src="/foo.mp4"   → inline <video> self-hosted (autoplay via user gesture)
+ * Se ambos estiverem vazios, o click só balança o botão (nada configurado ainda).
  */
 
 export function initVideoPlayer() {
@@ -9,12 +11,11 @@ export function initVideoPlayer() {
   if (!player) return;
 
   const ytId = player.dataset.ytId?.trim();
+  const videoSrc = player.dataset.videoSrc?.trim();
   const playBtn = player.querySelector('.video-player__play');
-
   if (!playBtn) return;
 
-  if (!ytId) {
-    // No video yet: click just shakes button, no-op
+  if (!ytId && !videoSrc) {
     playBtn.addEventListener('click', (e) => {
       e.preventDefault();
       playBtn.animate([
@@ -27,6 +28,23 @@ export function initVideoPlayer() {
   }
 
   playBtn.addEventListener('click', () => {
+    if (videoSrc) {
+      const video = document.createElement('video');
+      video.src = videoSrc;
+      video.controls = true;
+      video.playsInline = true;
+      video.setAttribute('preload', 'auto');
+      video.style.cssText = 'width: 100%; height: 100%; object-fit: contain; background: #000;';
+      player.innerHTML = '';
+      player.appendChild(video);
+      // play() dentro do handler de click herda o user gesture, então áudio funciona.
+      video.play().catch(() => {
+        video.muted = true;
+        video.play();
+      });
+      return;
+    }
+
     const iframe = document.createElement('iframe');
     iframe.src = `https://www.youtube.com/embed/${encodeURIComponent(ytId)}?autoplay=1&rel=0`;
     iframe.allow = 'autoplay; encrypted-media; picture-in-picture';
