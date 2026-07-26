@@ -590,6 +590,42 @@
 
 .video-explainer__mute-toggle svg { width: 20px; height: 20px; }
 
+/* Overlay grande "Toque para o som" — aparece enquanto o vídeo estiver
+   muted (Chrome bloqueia autoplay com som em visitas frescas). O clique
+   aqui é gesto explícito do usuário, então navegador libera áudio. */
+.video-explainer__sound-cue {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: rgba(0, 0, 0, 0.42);
+  color: white;
+  font-size: 15px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  z-index: 3;
+  transition: opacity 260ms var(--ease);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.video-explainer__sound-cue svg { width: 42px; height: 42px; }
+
+.video-explainer__reel[data-sound-on="true"] .video-explainer__sound-cue {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 767px) {
+  .video-explainer__sound-cue { font-size: 13px; letter-spacing: 2px; }
+  .video-explainer__sound-cue svg { width: 36px; height: 36px; }
+}
+
 @media (max-width: 900px) {
   .video-explainer__reel { max-width: 320px; }
 }

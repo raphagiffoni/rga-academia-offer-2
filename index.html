@@ -169,9 +169,17 @@
         <div class="video-explainer__reel reveal" id="video-explainer-reel">
           <video
             src="/video-oferta-recorrente.mp4"
-            loop playsinline preload="auto"
+            autoplay muted loop playsinline preload="auto"
             aria-label="Vídeo explicativo da oferta com plano recorrente"
           ></video>
+          <button class="video-explainer__sound-cue" id="video-explainer-sound-cue" aria-label="Ativar som do vídeo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M11 5L6 9H2v6h4l5 4V5z" stroke-linejoin="round" />
+              <path d="M15.54 8.46a5 5 0 010 7.07" stroke-linecap="round" />
+              <path d="M19.07 4.93a10 10 0 010 14.14" stroke-linecap="round" />
+            </svg>
+            <span>Toque para o som</span>
+          </button>
           <button class="video-explainer__mute-toggle" id="video-explainer-mute" aria-label="Ativar som">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path d="M11 5L6 9H2v6h4l5 4V5z" stroke-linejoin="round" />

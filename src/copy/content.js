@@ -224,6 +224,10 @@ export const faq = {
       a: 'O plano recorrente tem compromisso de 12 meses. Cancelamento antes do 12º mês tem multa contratual proporcional ao tempo restante do plano. Detalhes da multa ficam explicados no contrato no ato da matrícula, e você pode tirar dúvidas no WhatsApp antes de fechar.',
     },
     {
+      q: 'O plano recorrente afeta o limite do meu cartão?',
+      a: 'Não. No recorrente, seu cartão é cobrado mensalmente apenas o valor do plano (R$349 adulto ou R$309 kids), sem travar limite. Diferente do parcelado em 12x, que compromete o limite total das 12 parcelas de uma vez no momento da compra.',
+    },
+    {
       q: 'Como participo do seminário com o Rayron Gracie?',
       a: 'Ao pagar o plano anual até 15 de agosto você já garante sua presença. Detalhes de data, horário e formato do seminário serão enviados aos Membros Originais em agosto.',
     },
