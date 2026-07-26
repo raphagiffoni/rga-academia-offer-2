@@ -166,16 +166,19 @@
           <span class="kicker">2 minutos</span>
           <h2>O único plano com kimono pronto para vestir na aula inaugural.</h2>
         </div>
-        <div class="video-player reveal" id="video-player" data-video-src="/video-oferta-recorrente.mp4">
-          <div class="video-player__thumb">
-            <button class="video-player__play" aria-label="Reproduzir vídeo explicativo">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M6 4l14 8-14 8V4z" />
-              </svg>
-            </button>
-            <span class="video-player__caption video-player__caption--desktop">Clique<br />para o<br />play</span>
-            <span class="video-player__caption video-player__caption--mobile">Toque<br />para o<br />play</span>
-          </div>
+        <div class="video-explainer__reel reveal" id="video-explainer-reel">
+          <video
+            src="/video-oferta-recorrente.mp4"
+            autoplay muted loop playsinline
+            aria-label="Vídeo explicativo da oferta com plano recorrente"
+          ></video>
+          <button class="video-explainer__mute-toggle" id="video-explainer-mute" aria-label="Ativar som">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M11 5L6 9H2v6h4l5 4V5z" stroke-linejoin="round" />
+              <line x1="23" y1="9" x2="17" y2="15" stroke-linecap="round" />
+              <line x1="17" y1="9" x2="23" y2="15" stroke-linecap="round" />
+            </svg>
+          </button>
         </div>
         <p class="video-explainer__caption reveal">
           A academia em reforma, o que você recebe como Membro Original, e por que a data limite é 15 de agosto.

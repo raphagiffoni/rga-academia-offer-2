@@ -13,6 +13,7 @@ import { initMobileMenu, initStickyNav } from './modules/menu.js';
 import { initCartLinks } from './modules/cta-links.js';
 import { initSeminarVideo } from './modules/seminar-video.js';
 import { initVideoPlayer } from './modules/video-player.js';
+import { initVideoExplainerReel } from './modules/video-explainer-reel.js';
 import { initSmoothScroll } from './modules/smooth-scroll.js';
 import { initScrollAnimations } from './modules/scroll-animations.js';
 
@@ -26,6 +27,7 @@ function boot() {
   initMobileMenu();
   initStickyNav();
   initVideoPlayer();
+  initVideoExplainerReel();
   initSeminarVideo();
   initCountdowns();
 
