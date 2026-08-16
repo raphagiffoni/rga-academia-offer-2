@@ -9,7 +9,7 @@
  *  - Evitar em-dashes (—) na copy visível
  */
 
-export const OFFER_DEADLINE = '2026-08-15T23:59:00-03:00';
+export const OFFER_DEADLINE = '2026-09-12T19:00:00-03:00';
 export const CART_URL_PARCELADO  = 'https://evo-totem.w12app.com.br/evo/9178/site/AAeG4kxWhjYHyxNvFhiKIg%5BEQUAL%5D%5BEQUAL%5D';
 export const CART_URL_RECORRENTE = 'https://evo-totem.w12app.com.br/evo/9178/site/%5BBAR%5DXma0K9a9D%5BBAR%5D4o848NRz5og%5BEQUAL%5D%5BEQUAL%5D';
 // Alias mantido pra compatibilidade com módulos antigos que ainda usem CART_URL.
@@ -35,7 +35,7 @@ export const hero = {
   headline: 'A academia do Renzo Gracie chega a Belo Horizonte.',
   sub: 'Inauguração em setembro na Savassi, sob o olhar do Renzo. Faixa preta responsável: Raphael Coelho.',
   ctaLabel: 'Ser um Membro Original',
-  legend: 'Oferta válida até 15 de agosto, 23h59.',
+  legend: 'Últimas matrículas até a inauguração · 12 de setembro, 19h.',
 };
 
 export const videoExplainer = {
@@ -131,13 +131,12 @@ export const classes = {
 };
 
 export const offer = {
-  kicker: 'Oferta · até 15 de agosto',
+  kicker: 'Oferta · até a inauguração',
   headline: 'Torne-se um Membro Original da RGA-BH.',
-  sub: 'Todos que se matriculam antes da inauguração são Membros Originais. Mas só quem fecha até 15 de agosto recebe o kimono pronto para vestir na aula inaugural.',
+  sub: 'Todos que se matriculam até a inauguração (12 de setembro, 19h) são Membros Originais e recebem a camisa de passeio exclusiva e o patch oficial.',
   benefits: [
-    'Kimono RGA exclusivo (valor de R$700), pronto para vestir na aula inaugural',
-    'Patch oficial de Membro Original, costurado no kimono',
-    'Presença garantida no seminário de inauguração com Rayron Gracie (setembro)',
+    'Camisa de passeio RGA-BH exclusiva de Membro Original',
+    'Patch oficial de Membro Original',
     'Prioridade em eventos, workshops e experiências futuras da academia',
   ],
   plans: [
@@ -178,21 +177,21 @@ export const offer = {
       cartType: 'recorrente',
     },
   ],
-  urgencyBody: 'Depois disso, o kimono ainda vem, mas não a tempo da aula inaugural.',
+  urgencyBody: 'Depois da inauguração, as matrículas continuam mas sem a camisa e o patch exclusivos de Membro Original.',
 };
 
 export const seminar = {
-  kicker: 'Seminário de inauguração · setembro',
+  kicker: 'Inauguração · 12 de setembro',
   headline: 'Rayron Gracie no tatame da RGA-BH.',
   bullets: [
     '4x campeão mundial de Jiu-Jítsu',
     'Filho de Ryan Gracie',
     'Presença confirmada na inauguração da RGA Belo Horizonte',
   ],
-  body: 'O seminário faz parte da oferta dos Membros Originais. Se você entrar até 15 de agosto, sua vaga já está garantida.',
-  videoSrc: '/video-rayron.mp4', // TODO: subir MP4 quando disponível
+  body: 'O Rayron estará no tatame da RGA-BH na inauguração, dia 12 de setembro. Um marco para a Renzo Gracie em Belo Horizonte.',
+  videoSrc: '/video-rayron.mp4',
   videoPoster: '/video-rayron-poster.jpg',
-  ctaLabel: 'Quero estar no seminário',
+  ctaLabel: 'Seja um Membro Original',
 };
 
 export const faq = {
@@ -200,20 +199,20 @@ export const faq = {
   headline: 'Perguntas frequentes.',
   items: [
     {
-      q: 'O que exatamente eu recebo ao me tornar Membro Original nesta oferta?',
-      a: 'O plano anual (12x R$329 adulto parcelado / R$349 recorrente ou 12x R$299 kids parcelado / R$309 recorrente), um kimono RGA exclusivo avaliado em R$700 pronto para vestir na aula inaugural, um patch de Membro Original costurado no kimono, e presença garantida no seminário com Rayron Gracie em setembro.',
+      q: 'O que exatamente eu recebo ao me tornar Membro Original?',
+      a: 'O plano anual (12x R$329 adulto parcelado / R$349 recorrente ou 12x R$299 kids parcelado / R$309 recorrente), uma camisa de passeio RGA-BH exclusiva e o patch oficial de Membro Original.',
     },
     {
       q: 'Quando a academia abre?',
-      a: 'Em meados de setembro de 2026 na Rua Paraíba 889, Savassi, Belo Horizonte. A data exata será anunciada em breve.',
+      a: '12 de setembro de 2026, às 19h, na Rua Paraíba 889, Savassi, Belo Horizonte.',
     },
     {
       q: 'O que é o patch de Membro Original?',
-      a: 'É um patch bordado oficial que vai costurado no seu kimono RGA. Ele identifica você como parte do grupo dos primeiros alunos da RGA-BH, e não voltará a ser distribuído.',
+      a: 'É um patch bordado oficial e exclusivo dos primeiros alunos da RGA-BH. Identifica você como Membro Original da academia e não voltará a ser distribuído depois da inauguração.',
     },
     {
-      q: 'E se eu me matricular depois de 15 de agosto?',
-      a: 'Todos que se matriculam antes da inauguração são Membros Originais. Mas só quem fecha até 15 de agosto tem o kimono pronto para a aula inaugural. Nas ofertas seguintes, o kimono chega depois.',
+      q: 'E se eu me matricular depois da inauguração?',
+      a: 'Só quem se matricula até 12 de setembro (dia da inauguração) é Membro Original e recebe a camisa exclusiva e o patch. Matrículas depois disso continuam nos planos normais, mas sem os itens exclusivos.',
     },
     {
       q: 'Como funciona o pagamento?',
@@ -228,8 +227,8 @@ export const faq = {
       a: 'Não. No recorrente, seu cartão é cobrado mensalmente apenas o valor do plano (R$349 adulto ou R$309 kids), sem travar limite. Diferente do parcelado em 12x, que compromete o limite total das 12 parcelas de uma vez no momento da compra.',
     },
     {
-      q: 'Como participo do seminário com o Rayron Gracie?',
-      a: 'Ao pagar o plano anual até 15 de agosto você já garante sua presença. Detalhes de data, horário e formato do seminário serão enviados aos Membros Originais em agosto.',
+      q: 'Como funciona a inauguração?',
+      a: 'Dia 12 de setembro, às 19h, na Rua Paraíba 889 (Savassi). O Rayron Gracie estará no tatame como um marco de abertura da RGA-BH. Alunos matriculados recebem os detalhes de programação por e-mail.',
     },
     {
       q: 'Vocês têm aulas para mulheres?',
@@ -267,8 +266,8 @@ export const faq = {
 };
 
 export const finalCta = {
-  headline: 'Antes de 15 de agosto.',
-  body: 'Ofertas de Membro Original vão continuar até a inauguração. Mas só quem fecha até 15 de agosto tem o kimono pronto para vestir na aula inaugural.',
+  headline: 'Até a inauguração.',
+  body: 'Depois de 12 de setembro, 19h, as matrículas continuam mas sem a camisa e o patch exclusivos de Membro Original.',
   ctaLabel: 'Seja um Membro Original',
 };
 
