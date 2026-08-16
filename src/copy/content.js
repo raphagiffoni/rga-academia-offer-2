@@ -219,6 +219,10 @@ export const faq = {
       a: 'Duas opções pelo link do carrinho oficial: (1) parcelado em 12x no cartão de crédito (à vista), ou (2) recorrente mensal, com cobrança automática no cartão todo mês por 12 meses. Para dúvidas, fale no WhatsApp +55 31 97177-5617.',
     },
     {
+      q: 'Qual a diferença entre o plano anual e o anual recorrente?',
+      a: 'Anual (parcelado): 12x R$329 (adulto) ou 12x R$299 (kids). Valor total é fechado no cartão de crédito em 12 parcelas fixas. Como é à vista, as 12 parcelas comprometem o limite do cartão de uma vez só. Anual recorrente: R$349/mês (adulto) ou R$309/mês (kids), com cobrança automática todo mês por 12 meses. Não afeta o limite (só consome o valor do mês). Tem compromisso de 12 meses com multa contratual se cancelar antes. Escolha parcelado se prefere resolver de uma vez ou tem limite disponível; recorrente se quer preservar limite do cartão.',
+    },
+    {
       q: 'Como funciona o cancelamento do plano recorrente?',
       a: 'O plano recorrente tem compromisso de 12 meses. Cancelamento antes do 12º mês tem multa contratual proporcional ao tempo restante do plano. Detalhes da multa ficam explicados no contrato no ato da matrícula, e você pode tirar dúvidas no WhatsApp antes de fechar.',
     },
