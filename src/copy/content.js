@@ -35,7 +35,7 @@ export const hero = {
   headline: 'A academia do Renzo Gracie chega a Belo Horizonte.',
   sub: 'Inauguração em setembro na Savassi, sob o olhar do Renzo. Faixa preta responsável: Raphael Coelho.',
   ctaLabel: 'Ser um Membro Original',
-  legend: 'Últimas matrículas até a inauguração · 12 de setembro, 19h.',
+  legend: 'Últimas matrículas até a inauguração · 12 de setembro.',
 };
 
 export const videoExplainer = {
@@ -133,7 +133,7 @@ export const classes = {
 export const offer = {
   kicker: 'Oferta · até a inauguração',
   headline: 'Torne-se um Membro Original da RGA-BH.',
-  sub: 'Todos que se matriculam até a inauguração (12 de setembro, 19h) são Membros Originais e recebem a camisa de passeio exclusiva e o patch oficial.',
+  sub: 'Todos que se matriculam até a inauguração (12 de setembro) são Membros Originais e recebem a camisa de passeio exclusiva e o patch oficial.',
   benefits: [
     'Camisa de passeio RGA-BH exclusiva de Membro Original',
     'Patch oficial de Membro Original',
@@ -204,7 +204,7 @@ export const faq = {
     },
     {
       q: 'Quando a academia abre?',
-      a: '12 de setembro de 2026, às 19h, na Rua Paraíba 889, Savassi, Belo Horizonte.',
+      a: '12 de setembro de 2026, na Rua Paraíba 889, Savassi, Belo Horizonte.',
     },
     {
       q: 'O que é o patch de Membro Original?',
@@ -232,7 +232,7 @@ export const faq = {
     },
     {
       q: 'Como funciona a inauguração?',
-      a: 'Dia 12 de setembro, às 19h, na Rua Paraíba 889 (Savassi). O Rayron Gracie estará no tatame como um marco de abertura da RGA-BH. Alunos matriculados recebem os detalhes de programação por e-mail.',
+      a: 'Dia 12 de setembro, na Rua Paraíba 889 (Savassi). O Rayron Gracie estará no tatame como um marco de abertura da RGA-BH. Alunos matriculados recebem os detalhes de programação por e-mail.',
     },
     {
       q: 'Vocês têm aulas para mulheres?',
@@ -271,7 +271,7 @@ export const faq = {
 
 export const finalCta = {
   headline: 'Até a inauguração.',
-  body: 'Depois de 12 de setembro, 19h, as matrículas continuam mas sem a camisa e o patch exclusivos de Membro Original.',
+  body: 'Depois de 12 de setembro, as matrículas continuam mas sem a camisa e o patch exclusivos de Membro Original.',
   ctaLabel: 'Seja um Membro Original',
 };
 
