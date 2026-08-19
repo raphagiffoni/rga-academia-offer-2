@@ -10,9 +10,11 @@
  */
 
 export const OFFER_DEADLINE = '2026-09-12T19:00:00-03:00';
-export const CART_URL_PARCELADO  = 'https://evo-totem.w12app.com.br/evo/9178/site/AAeG4kxWhjYHyxNvFhiKIg%5BEQUAL%5D%5BEQUAL%5D';
-export const CART_URL_RECORRENTE = 'https://evo-totem.w12app.com.br/evo/9178/site/%5BBAR%5DXma0K9a9D%5BBAR%5D4o848NRz5og%5BEQUAL%5D%5BEQUAL%5D';
-// Alias mantido pra compatibilidade com módulos antigos que ainda usem CART_URL.
+// Carrinho unificado — mesma URL para parcelado e recorrente (usuário
+// escolhe o plano dentro do w12). Se um dia precisar separar de novo,
+// só apontar cada constante pra URL diferente.
+export const CART_URL_PARCELADO  = 'https://evo-totem.w12app.com.br/evo/9178/site/9OOY0o1SS6LIwl2EAyaUnQ%5BEQUAL%5D%5BEQUAL%5D';
+export const CART_URL_RECORRENTE = 'https://evo-totem.w12app.com.br/evo/9178/site/9OOY0o1SS6LIwl2EAyaUnQ%5BEQUAL%5D%5BEQUAL%5D';
 export const CART_URL = CART_URL_PARCELADO;
 export const WHATSAPP_NUMBER = '5531971775617';
 export const WHATSAPP_MESSAGE = 'Olá, quero saber mais sobre a RGA-BH.';
